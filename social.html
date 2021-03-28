@@ -20,6 +20,14 @@
 		<!-- Codigo JavaScript -->
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/w3.js"></script>
+
+		<style>
+			iframe.twitter-timeline {
+				height: auto !important;
+    			min-height: 375px !important;
+			}
+		</style>
 	
 	</head>
 
@@ -28,61 +36,8 @@
 		<!-- Pagina Principal -->
 		<div id="wrapper">
 		
-            <!-- Barra de Navegacion -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                        
-                <!-- Responsive Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Granada Freak</a>
-                </div>
-                
-                <!-- Opciones de Navegacion -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
-                    <!-- Menu de Navegacion -->
-                    <ul id="active" class="nav navbar-nav side-nav">
-                        <li id="index"><a href="index.html"><i class="fa fa-archive"></i>&nbsp; Inicio</a></li>
-                        <li id="actividades" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-bullhorn"></i>&nbsp; Actividades &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="eventos"><a href="eventos.html"><i class="fa fa-calendar-check-o"></i>&nbsp; Pr&oacute;ximos Eventos</a></li>
-                                <li id="galeria"><a href="galeria.html"><i class="fa fa-camera"></i>&nbsp; Galer&iacute;a</a></li> 
-                            </ul>
-                        </li>
-                        <li id="miembros" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-database"></i>&nbsp; Formularios &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="nuevo-miembro"><a href="nuevo-miembro.html"><i class="fa fa-user-plus"></i>&nbsp; &Uacute;nete a Nosotros</a></li>
-                                <li id="baja"><a href="baja.html"><i class="fa fa-user-times"></i>&nbsp; Date de Baja</a></li>
-                                <li id="contactanos"><a href="contactanos.html"><i class="fa fa-envelope"></i>&nbsp; Cont&aacute;ctanos</a></li>
-                            </ul>
-                        </li>
-                        <li id="normativa" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-book"></i>&nbsp; Normativa &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="reglamentacion"><a href="reglamentacion.html"><i class="fa fa-university"></i>&nbsp; Reglamentaci&oacute;n</a></li>
-                                <li id="proteccion-datos"><a href="proteccion-datos.html"><i class="fa fa-lock"></i>&nbsp; Protecci&oacute;n de Datos</a></li>
-                            </ul>
-                        </li>
-                        <li id="cloud"><a href="cloud.html"><i class="fa fa-cloud"></i>&nbsp; Archivos Compartidos</a></li>
-                        <li id="social" class="selected"><a href="social.html"><i class="fa fa-tags"></i>&nbsp; Redes Sociales</a></li>
-                        <li id="faq"><a href="faq.html"><i class="fa fa-question-circle"></i>&nbsp; FAQ</a></li>
-                    </ul>
-                    
-                </div>
-            </nav>
+			<!-- Barra de Navegacion -->
+			<div w3-include-HTML="assets/navigation.html"></div>
 
 			<!-- Contenido de la Pagina -->
 			<div class="container">
@@ -113,13 +68,19 @@
 						<div class="panel-body text-justify">
 							<blockquote>
 								<p>
-									Estas son nuestras redes sociales oficiales. A trav&eacute;s de ellas podr&aacute;s encontrar 
-									diferente informaci&oacute;n de la asociaci&oacute;n. Si quieres saber que actividades realizamos, 
-									a que nos dedicamos, etc. Esta es la mejor forma, junto con la propia web. Estas redes, adem&aacute;s, 
-									son las &uacute;nicas oficiales. Cualquiera que no aparezca en este listado, no nos pertenece. Si lo 
-									que buscas es ponerte en contacto con nosotros, la mejor manera es a trav&eacute;s del formulario de 
-									<a href="contactanos.html">contacto</a>. Aunque tambi&eacute;n puedes hacerlo a trav&eacute;s de las 
-									redes. Escoge la opci&oacute;n que mas te guste.
+									Aqu&iacute; est&aacute;n nuestras redes sociales oficiales. A trav&eacute;s de ellas, puedes 
+									encontrar diferente informaci&oacute;n de la asociaci&oacute;n, as&iacute; como contactar con 
+									nosotros/as. Si estas interesado/a en conocer mas acerca de las actividades que realizamos o a que 
+									nos dedicamos, esta es la mejor manera, en conjunto con la propia web.
+								</p>
+								<p>
+									Estas redes son las &uacute;nicas redes oficiales que tenemos. Cualquier cuenta que no aparezca en 
+									este listado, no nos pertenece. 
+								</p>
+								<p>
+									Si deseas ponerte en contacto con nosotros, otra alternativa es utilizar el formulario de 
+									<a href="contactanos.html">contacto</a>, adem&aacute;s de usar las redes que aqu&iacute; aparecen. 
+									Puedes escoger la opci&oacute;n que m&aacute;s te guste.
 								</p>
 							</blockquote>
 						</div>
@@ -200,10 +161,10 @@
 							</div>
 							<div class="panel-body feed">
 								<section class="feed-item">
-									<a class="twitter-timeline" data-lang="es" data-theme="dark" href="https://twitter.com/GranadaFreak?ref_src=twsrc%5Etfw">
+									<a class="twitter-timeline" data-width="100%" data-height="auto" data-lang="es" data-theme="dark" href="https://twitter.com/GranadaFreak?ref_src=twsrc%5Etfw">
 										Tweets by GranadaFreak
 									</a>
-		
+	
 									<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 								</section>
 							</div>
@@ -213,15 +174,16 @@
 				</div>
 
 				<!-- Footer -->
-				<div class="col-lg-12 fixed-bottom text-center">                    
-					<p class="text-info">
-						<strong>Copyright &copy; Granada Freak 2021
-					</p>
-				</div>
+				<div w3-include-HTML="assets/footer.html"></div>
 
 			</div>
 			
 		</div>
+
+		<!-- Scripts -->
+		<script>
+			w3.includeHTML(() => w3.addClass('#nav-social', 'selected'));
+		</script>
 
 	</body>
 

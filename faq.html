@@ -20,6 +20,7 @@
 		<!-- Codigo JavaScript -->
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/w3.js"></script>
 	
 	</head>
 
@@ -28,61 +29,8 @@
 		<!-- Pagina Principal -->
 		<div id="wrapper">
 		
-            <!-- Barra de Navegacion -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                        
-                <!-- Responsive Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Granada Freak</a>
-                </div>
-                
-                <!-- Opciones de Navegacion -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
-                    <!-- Menu de Navegacion -->
-                    <ul id="active" class="nav navbar-nav side-nav">
-                        <li id="index"><a href="index.html"><i class="fa fa-archive"></i>&nbsp; Inicio</a></li>
-                        <li id="actividades" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-bullhorn"></i>&nbsp; Actividades &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="eventos"><a href="eventos.html"><i class="fa fa-calendar-check-o"></i>&nbsp; Pr&oacute;ximos Eventos</a></li>
-                                <li id="galeria"><a href="galeria.html"><i class="fa fa-camera"></i>&nbsp; Galer&iacute;a</a></li> 
-                            </ul>
-                        </li>
-                        <li id="miembros" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-database"></i>&nbsp; Formularios &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="nuevo-miembro"><a href="nuevo-miembro.html"><i class="fa fa-user-plus"></i>&nbsp; &Uacute;nete a Nosotros</a></li>
-                                <li id="baja"><a href="baja.html"><i class="fa fa-user-times"></i>&nbsp; Date de Baja</a></li>
-                                <li id="contactanos"><a href="contactanos.html"><i class="fa fa-envelope"></i>&nbsp; Cont&aacute;ctanos</a></li>
-                            </ul>
-                        </li>
-                        <li id="normativa" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-book"></i>&nbsp; Normativa &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="reglamentacion"><a href="reglamentacion.html"><i class="fa fa-university"></i>&nbsp; Reglamentaci&oacute;n</a></li>
-                                <li id="proteccion-datos"><a href="proteccion-datos.html"><i class="fa fa-lock"></i>&nbsp; Protecci&oacute;n de Datos</a></li>
-                            </ul>
-                        </li>
-                        <li id="cloud"><a href="cloud.html"><i class="fa fa-cloud"></i>&nbsp; Archivos Compartidos</a></li>
-                        <li id="social"><a href="social.html"><i class="fa fa-tags"></i>&nbsp; Redes Sociales</a></li>
-                        <li id="faq" class="selected"><a href="faq.html"><i class="fa fa-question-circle"></i>&nbsp; FAQ</a></li>
-                    </ul>
-                    
-                </div>
-            </nav>
+			<!-- Barra de Navegacion -->
+			<div w3-include-HTML="assets/navigation.html"></div>
 
 			<!-- Contenido de la Pagina -->
 			<div class="container">
@@ -111,12 +59,14 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<h3>¿Cu&aacute;nto cuesta unirme a Granada Freak?</h3>
+									<i class="fa fa-money fa-4x pull-left"></i>
 									<p>
-										Nada, es totalmente gratuito. Algunas actividades (Excursiones, viajes, etc.) podr&iacute;an 
-										requerir de alg&uacute;n pago, pero siempre se avisar&aacute; con antelaci&oacute;n, se 
-										ofrecer&aacute; un precio ajustado y ser&aacute; totalmente opcional acudir a la actividad. En 
-										un futuro, esto podr&iacute;a cambiar, pero siempre con el consentimiento de todos los 
-										miembros.
+										Nada, es totalmente gratuito. Algunas actividades como viajes o excursiones podr&iacute;an 
+										requerir de alg&uacute;n pago, pero siempre se avisar&iacute;a con antelaci&oacute;n, se 
+										ofrecer&iacute;a un precio ajustado y ser&iacute;a totalmente opcional acudir a la actividad. 
+										En un futuro, esto podr&iacute;a cambiar, pero siempre con el consentimiento de todos/as los 
+										miembros. Mientras los/as miembros as&iacute; lo quieran, <strong>Granada Freak</strong> no 
+										tendr&aacute; cuotas.
 									</p>
 								</div>
 							</div>
@@ -124,11 +74,14 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<h3>¿Cu&aacute;les son las v&iacute;as de comunicaci&oacute;n interna?</h3>
+									<i class="fa fa-weixin fa-4x pull-left"></i>
 									<p>
-										Internamente disponemos de varias v&iacute;as de comunicaci&oacute;n. El email y un grupo 
-										en Facebook son las v&iacute;as principales, pero tambi&eacute;n disponemos de Discord y 
-										WhatsApp. Si se reclama alguna v&iacute;a concreta se podr&iacute;a implementar. Lo importante 
-										es la comodidad y que todos los miembros puedan estar en contacto sin problemas.
+										En <strong>Granada Freak</strong> disponemos de distintas v&iacute;as de comunicaci&oacute;n 
+										interna. El email y un grupo de Facebook son las v&iacute;as principales, junto con un grupo 
+										en Whatsapp. Tambien disponemos de Discord para los/as miembros que as&iacute; lo deseen. Si se 
+										reclamara alguna otra v&iacute;a de contacto concreta, se podr&iacute;a implementar sin 
+										ning&uacute;n problema. Lo importante es la comodidad y que todos los/as miembros puedan estar 
+										en contacto.
 									</p>
 								</div>
 							</div>
@@ -136,12 +89,13 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<h3>¿Cu&aacute;l es la estructura interna de Granada Freak?</h3>
+									<i class="fa fa-cogs fa-4x pull-left"></i>
 									<p>
-										En Granada Freak no queremos que nadie sea mas que nadie. Tenemos administradores y 
-										moderadores para velar porque se cumplan las normas y que la experiencia de los miembros sea 
-										siempre la mejor. Pero a la hora de tomar decisiones todos pueden hablar, todos pueden 
-										proponer, sugerir cambios y votar. La voz de cualquier miembro es importante. Por eso, el voto 
-										de todos los miembros es igual.
+										En <strong>Granada Freak</strong> no queremos que nadie sea mas que nadie. Tenemos 
+										administradores/as y moderadores/as para velar porque se cumplan las normas y que la 
+										experiencia de los/as miembros sea siempre la mejor. Pero a la hora de tomar decisiones 
+										todos/as pueden hablar, todos/as pueden proponer, sugerir cambios y votar. La voz de cualquier 
+										miembro es importante. Por eso, el voto de todos/as los/as miembros es igual.
 									</p>
 								</div>
 							</div>
@@ -149,12 +103,13 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<h3>¿C&oacute;mo se toman las decisiones?</h3>
+									<i class="fa fa-pie-chart fa-4x pull-left"></i>
 									<p>
-										Las decisiones se toman entre todos. Cualquier miembro puede proponer actividades, cambios en 
-										la reglamentaci&oacute;n, etc. Todo cambio se hace a trav&eacute;s de una votaci&oacute;n 
+										Las decisiones se toman entre todos/as. Cualquier miembro puede proponer actividades, cambios 
+										en la reglamentaci&oacute;n, etc. Todo cambio se hace a trav&eacute;s de una votaci&oacute;n 
 										donde todo el mundo puede expresar su opini&oacute;n. As&iacute; mismo, se realizan asambleas 
-										peri&oacute;dicas para que los miembros puedan hablar y as&iacute; tomar todas las decisiones 
-										conjuntamente.
+										peri&oacute;dicas para que los/as miembros puedan hablar y as&iacute; tomar todas las 
+										decisiones conjuntamente.
 									</p>
 								</div>
 							</div>
@@ -162,12 +117,13 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<h3>¿Por qu&eacute; Granada Freak se reserva el derecho de admisi&oacute;n?</h3>
+									<i class="fa fa-gavel fa-4x pull-left"></i>
 									<p>
 										La idea no es prohibir la entrada a nadie. Lo que se pretende es evitar que gente 
-										malintencionada (personas que solo buscan molestar, exmiembros que fueron expulsados por 
+										malintencionada (personas que solo buscan molestar, ex-miembros que fueron expulsados/as por 
 										incumplir las normas, etc.) pueda entrar y enturbiar la experiencia del resto de miembros. 
-										Queremos que todos los miembros se sientan a gusto en Granada Freak. Rechazamos a cualquiera 
-										que busque da&ntilde;ar a los dem&aacute;s.
+										Queremos que todos/as los/as miembros se sientan a gusto en <strong>Granada Freak</strong>. 
+										Rechazamos a cualquiera que busque da&ntilde;ar a los dem&aacute;s.
 									</p>
 								</div>
 							</div>
@@ -175,12 +131,13 @@
 							<div class="row">
 								<div class="col-xs-12">
 									<h3>¿C&oacute;mo puedo proponer cambios o actividades?</h3>
+									<i class="fa fa-puzzle-piece fa-4x pull-left"></i>
 									<p>
-										Pues de casi cualquier forma que se te ocurra. Tienes emails, formularios de contacto y 
+										De casi cualquier forma que se te ocurra. Tienes emails, formularios de contacto y 
 										cualquier v&iacute;a de comunicaci&oacute;n que uses para conectar con el resto de miembros. 
 										Puedes comentarlo con el resto de miembros y organizar una votaci&oacute;n, puedes hablarlo 
-										con administradores o moderadores para que lo organicen por ti… Escoge la opci&oacute;n que 
-										m&aacute;s te guste.
+										con administradores/as o moderadores/as para que lo organicen por ti tambi&eacute;n. Escoge la 
+										opci&oacute;n que m&aacute;s te guste.
 									</p>
 								</div>
 							</div>
@@ -191,13 +148,14 @@
 			</div>
 
 			<!-- Footer -->
-			<div class="col-lg-12 fixed-bottom text-center">                    
-				<p class="text-info">
-					<strong>Copyright &copy; Granada Freak 2021
-				</p>
-			</div>
+			<div w3-include-HTML="assets/footer.html"></div>
 			
 		</div>
+
+		<!-- Scripts -->
+		<script>
+			w3.includeHTML(() => w3.addClass('#nav-faq', 'selected'));
+		</script>
 
 	</body>
 

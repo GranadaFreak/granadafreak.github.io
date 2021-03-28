@@ -20,6 +20,7 @@
 		<!-- Codigo JavaScript -->
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/w3.js"></script>
 	
 	</head>
 
@@ -28,61 +29,8 @@
 		<!-- Pagina Principal -->
 		<div id="wrapper">
 		
-            <!-- Barra de Navegacion -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                        
-                <!-- Responsive Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Granada Freak</a>
-                </div>
-                
-                <!-- Opciones de Navegacion -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
-                    <!-- Menu de Navegacion -->
-                    <ul id="active" class="nav navbar-nav side-nav">
-                        <li id="index"><a href="index.html"><i class="fa fa-archive"></i>&nbsp; Inicio</a></li>
-                        <li id="actividades" class="dropdown open">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-bullhorn"></i>&nbsp; Actividades &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="eventos"><a href="eventos.html"><i class="fa fa-calendar-check-o"></i>&nbsp; Pr&oacute;ximos Eventos</a></li>
-                                <li id="galeria" class="selected"><a href="galeria.html"><i class="fa fa-camera"></i>&nbsp; Galer&iacute;a</a></li> 
-                            </ul>
-                        </li>
-                        <li id="miembros" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-database"></i>&nbsp; Formularios &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="nuevo-miembro"><a href="nuevo-miembro.html"><i class="fa fa-user-plus"></i>&nbsp; &Uacute;nete a Nosotros</a></li>
-                                <li id="baja"><a href="baja.html"><i class="fa fa-user-times"></i>&nbsp; Date de Baja</a></li>
-                                <li id="contactanos"><a href="contactanos.html"><i class="fa fa-envelope"></i>&nbsp; Cont&aacute;ctanos</a></li>
-                            </ul>
-                        </li>
-                        <li id="normativa" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-book"></i>&nbsp; Normativa &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="reglamentacion"><a href="reglamentacion.html"><i class="fa fa-university"></i>&nbsp; Reglamentaci&oacute;n</a></li>
-                                <li id="proteccion-datos"><a href="proteccion-datos.html"><i class="fa fa-lock"></i>&nbsp; Protecci&oacute;n de Datos</a></li>
-                            </ul>
-                        </li>
-                        <li id="cloud"><a href="cloud.html"><i class="fa fa-cloud"></i>&nbsp; Archivos Compartidos</a></li>
-                        <li id="social"><a href="social.html"><i class="fa fa-tags"></i>&nbsp; Redes Sociales</a></li>
-                        <li id="faq"><a href="faq.html"><i class="fa fa-question-circle"></i>&nbsp; FAQ</a></li>
-                    </ul>
-                    
-                </div>
-            </nav>
+			<!-- Barra de Navegacion -->
+			<div w3-include-HTML="assets/navigation.html"></div>
 
 			<!-- Contenido de la Pagina -->
 			<div class="container">
@@ -112,7 +60,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Juegos de Mesa</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent1">
+								<div data-toggle="modal" data-target="#modal-event-01">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 01" src="images/galery/cover/event-01.jpg"/>
 									</a>
@@ -123,7 +71,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Convenciones y Eventos</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent2">
+								<div data-toggle="modal" data-target="#modal-event-02">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 02" src="images/galery/cover/event-02.jpeg" />
 									</a>
@@ -134,7 +82,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Talleres</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent3">
+								<div data-toggle="modal" data-target="#modal-event-03">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 03" src="images/galery/cover/event-03.png" />
 									</a>
@@ -149,7 +97,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Cine y Series</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent4">
+								<div data-toggle="modal" data-target="#modal-event-04">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 04" src="images/galery/cover/event-04.jpg" />
 									</a>
@@ -160,7 +108,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Videojuegos</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent5">
+								<div data-toggle="modal" data-target="#modal-event-05">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 05" src="images/galery/cover/event-05.jpg" />
 									</a>
@@ -171,7 +119,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Juegos de Rol</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent6">
+								<div data-toggle="modal" data-target="#modal-event-06">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 06" src="images/galery/cover/event-06.jpg" />
 									</a>
@@ -186,7 +134,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Actividades y Excursiones</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent7">
+								<div data-toggle="modal" data-target="#modal-event-07">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 07" src="images/galery/cover/event-07.jpeg" />
 									</a>
@@ -197,7 +145,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Encuentros y Quedadas</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent8">
+								<div data-toggle="modal" data-target="#modal-event-08">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 08" src="images/galery/cover/event-8.jpg" />
 									</a>
@@ -208,7 +156,7 @@
 							<div class="well text-justify">
 								<h3 class="text-primary">Festividades</h3>
 								<br/>
-								<div data-toggle="modal" data-target="#modalEvent9">
+								<div data-toggle="modal" data-target="#modal-event-09">
 									<a href="#">
 										<img class="thumbnail img-responsive" alt="Evento 09" src="images/galery/cover/event-09.jpg" />
 									</a>
@@ -218,249 +166,7 @@
 					</div>
 
 					<!-- Modals -->
-					<div class="row">
-						<div id="modalEvent1" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Juegos de Mesa</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 01" src="images/galery/modals/event-01.jpg" />
-										<span>
-											Si te gustan los juegos de mesa, en <strong>Granada Freak</strong> organizamos partidas 
-											de tus juegos de mesa favoritos. Desde el cl&aacute;sico <i>UNO</i> hasta juegos mucho 
-											m&aacute;s elaborados como <i>Eldrich Horror</i> o <i>Zombicide</i>. Tambi&eacute;n 
-											somos aficionados a frecuentar locales como <i>Continental Caf&eacute; Pub Granada</i>. 
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent2" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Convenciones y Eventos</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 02" src="images/galery/modals/event-02.jpg" />
-										<span>
-											Las convenciones son mucho m&aacute;s divertidas con amigos. En <strong>Granada 
-											Freak</strong>, somo aficionados a todas y cada una de las convenciones que se celebran en 
-											Granada (<i>Ficzone</i>, <i>Japan Weekend</i>, etc.). Pero no nos quedamos ah&iacute;, 
-											tambi&eacute;n nos gustan las que se celebran fuera de Granada y nos esforzamos por 
-											organizarnos para visitar las mejores.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent3" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Talleres</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 03" src="images/galery/modals/event-03.jpg" />
-										<span>
-											Si eres fan de las manualidades, te gusta dibujar, tallar o cualquier forma de 
-											expresi&oacute;n art&iacute;stica, estas en el mejor sitio. Nuestros miembros siempre 
-											est&aacute;n dispuestos a organizar talleres y compartir sus habilidades con el resto 
-											de compa&ntilde;eros. Desde manualidades de todo tipo hasta talleres de dibujo, pasando 
-											por talleres de cosplay o charlas interesantes sobre la cultura freak.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent4" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Cine y Series</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 04" src="images/galery/modals/event-04.jpg" />
-										<span>
-											En <strong>Granada Freak</strong> somos fans del cine y las series. Organizamos quedadas 
-											para ver series y para ir al cine a los mejores estrenos. Utilizamos aplicaciones de 
-											streaming para ver series de manera conjunta, con videoconferencia para poder comentarlas. 
-											Tambi&eacute;n acudimos a los mejores cines de Granada para ver los &uacute;ltimos estrenos 
-											de pel&iacute;culas de todo tipo. Si hay algo mejor que una buena pel&iacute;cula o serie, 
-											es verlas con amigos con quienes poder comentarlas luegos.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent5" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Videojuegos</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 05" src="images/galery/modals/event-05.jpg" />
-										<span>
-											Los videojuegos son una buena manera de pasar el rato y conocer gente. Si te gustan, en 
-											<strong>Granada Freak</strong>, podr&aacute;s jugar con el resto de miembros a los mejores 
-											juegos cooperativos y competitivos. Quien sabe, igual aqu&iacute; encuentras a tu futuro 
-											equipo para acudir a competiciones. Y como fans de los eSports, podr&aacute;s ver y 
-											comentar con nosotros ligas y campeonatos de todos los juegos que te gustan.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent6" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Juegos de Rol</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 06" src="images/galery/modals/event-06.png" />
-										<span>
-											Ya seas más de ciencia ficci&oacute;n o de fantas&iacute;a, en <strong>Granada 
-											Freak</strong> tienen cabida todos los juegos de rol. Desde <i>Dungeons & Dragons</i> a 
-											<i>La Llamada de Cthulhu</i>, aqu&iacute; nos gusta organizar y dirigir partidas de rol. 
-											Y, por supuesto, jugar a interminables partidas de rol. Y lo mejor es que no hay dos 
-											partidas iguales ni dos historias con igual desarrollo. Las posibilidades de 
-											diversi&oacute;n son infinitas.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent7" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Actividades y Excursiones</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 07" src="images/galery/modals/event-07.png" />
-										<span>
-											Las actividades al aire libre y las excursiones son una buena manera de salir y 
-											desconectar. Ya sea hacer senderismo, ir a la playa, organizar gymkhanas, etc. Con el 
-											buen tiempo apetece salir y nada mejor que hacerlo con buena gente con la que charlar, 
-											re&iacute;r y pasarlo bien.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent8" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Encuentros y Quedadas</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 08" src="images/galery/modals/event-08.jpg" />
-										<span>
-											A veces solo apetece salir, desconectar y distraerse un poco. Ya sea salir a pasear, 
-											a tomarse algo, etc. En <strong>Granada Freak</strong> encontraras gente con la que pasar 
-											el rato y divertirte. 
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="modalEvent9" class="modal" tabindex="-1" role="dialog">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h5 class="modal-title">Festividades</h5>
-									</div>
-									<div class="modal-body text-justify">
-										<img class="thumbnail img-responsive" alt="Evento 09" src="images/galery/modals/event-09.jpg" />
-										<span>
-											En <strong>Granada Freak</strong> tenemos nuestras festividades. El <i>25 de Mayo</i> 
-											celebramos el <i>D&iacute;a del Orgullo Friki</i>, porque estamos orgullosos de ser 
-											quienes somos y de las aficiones que tenemos. El cumplea&ntilde;os de la 
-											asociaci&oacute;n tambi&eacute;n es un d&iacute;a importante y, por supuesto, fechas 
-											se&ntilde;aladas como la celebraci&oacute;n del <i>Ficzone</i>.
-										</span>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-primary" data-dismiss="modal">
-											<i class="fa fa-times fa-fw"></i>&nbsp; Cerrar
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<div w3-include-HTML="assets/galery/modals.html"></div>
 					
 				</div>
 			</div>
@@ -468,13 +174,17 @@
 			<br/>
 
 			<!-- Footer -->
-			<div class="col-lg-12 fixed-bottom text-center">                    
-				<p class="text-info">
-					<strong>Copyright &copy; Granada Freak 2021
-				</p>
-			</div>
+			<div w3-include-HTML="assets/footer.html"></div>
 		
 		</div>
+		
+		<!-- Scripts -->
+		<script>
+			w3.includeHTML((a) => {
+				w3.addClass('#nav-activities', 'open');
+				w3.addClass('#nav-galery', 'selected');
+			});
+		</script>
 
 	</body>
 

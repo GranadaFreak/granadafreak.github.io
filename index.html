@@ -20,6 +20,7 @@
 		<!-- Codigo JavaScript -->
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/w3.js"></script>
 	
 	</head>
 
@@ -28,61 +29,8 @@
 		<!-- Pagina Principal -->
 		<div id="wrapper">
 		
-            <!-- Barra de Navegacion -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                        
-                <!-- Responsive Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Granada Freak</a>
-                </div>
-                
-                <!-- Opciones de Navegacion -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
-                    <!-- Menu de Navegacion -->
-                    <ul id="active" class="nav navbar-nav side-nav">
-                        <li id="index" class="selected"><a href="index.html"><i class="fa fa-archive"></i>&nbsp; Inicio</a></li>
-                        <li id="actividades" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-bullhorn"></i>&nbsp; Actividades &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="eventos"><a href="eventos.html"><i class="fa fa-calendar-check-o"></i>&nbsp; Pr&oacute;ximos Eventos</a></li>
-                                <li id="galeria"><a href="galeria.html"><i class="fa fa-camera"></i>&nbsp; Galer&iacute;a</a></li> 
-                            </ul>
-                        </li>
-                        <li id="miembros" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa fa-database"></i>&nbsp; Formularios &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="nuevo-miembro"><a href="nuevo-miembro.html"><i class="fa fa-user-plus"></i>&nbsp; &Uacute;nete a Nosotros</a></li>
-                                <li id="baja"><a href="baja.html"><i class="fa fa-user-times"></i>&nbsp; Date de Baja</a></li>
-                                <li id="contactanos"><a href="contactanos.html"><i class="fa fa-envelope"></i>&nbsp; Cont&aacute;ctanos</a></li>
-                            </ul>
-                        </li>
-                        <li id="normativa" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-book"></i>&nbsp; Normativa &nbsp;<b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li id="reglamentacion"><a href="reglamentacion.html"><i class="fa fa-university"></i>&nbsp; Reglamentaci&oacute;n</a></li>
-                                <li id="proteccion-datos"><a href="proteccion-datos.html"><i class="fa fa-lock"></i>&nbsp; Protecci&oacute;n de Datos</a></li>
-                            </ul>
-                        </li>
-                        <li id="cloud"><a href="cloud.html"><i class="fa fa-cloud"></i>&nbsp; Archivos Compartidos</a></li>
-                        <li id="social"><a href="social.html"><i class="fa fa-tags"></i>&nbsp; Redes Sociales</a></li>
-                        <li id="faq"><a href="faq.html"><i class="fa fa-question-circle"></i>&nbsp; FAQ</a></li>
-                    </ul>
-                    
-                </div>
-            </nav>
+			<!-- Barra de Navegacion -->
+			<div w3-include-HTML="assets/navigation.html"></div>
 			
 			<!-- Contenido de la Pagina -->
 			<div id="page-wrapper">
@@ -110,7 +58,7 @@
 						<!-- Mensaje de Alerta -->
 						<div class="alert alert-dismissable alert-info">
 							<button data-dismiss="alert" class="close" type="button">&times;</button>
-							Web en Construcci&oacute;n de <strong>Granada Freak</strong>
+							Bienvenido/a a la Web Oficial de <strong>Granada Freak</strong>
 						</div>
 
 					</div>
@@ -130,204 +78,60 @@
 								<h3 class="panel-title"><i class="fa fa-archive"></i> ¿Qu&eacute; es Granada Freak?</h3>
 							</div>
 							<div class="panel-body text-justify">
-								<p>
-									En <strong>Granada Freak</strong> somos un grupo de gente de Granada que disfrutamos con el 
-									anime, el manga, los juegos, ya sean videojuegos o juegos de mesa; y que hemos decidido unirnos, 
-									crear un lugar de reuni&oacute;n para que todos los que compartan estas aficiones puedan 
-									relacionarse, hacer nuevas amistades y pasarlo bien.
-								</p>
-								<div class="col-md-6">
-									<img class="thumbnail img-responsive" alt="IMG 01" src="images/index/img-01.jpg"/>
+								<div class="col-md-12">
+									<p>
+										<strong>Granada Freak</strong> es una asociaci&oacute;n (o agrupaci&oacute;n, como se prefiera) 
+										de Granada para todos/as aquellos/as que disfrutamos con el anime, el manga, los juegos (tanto 
+										juegos de mesa como videojuegos o juegos de rol); y que hemos decidido unirnos, crear un lugar 
+										de reuni&oacute;n para cualquier persona que comparta estas aficiones. <strong>Granada 
+										Freak</strong> es, por tanto, un lugar de reuni&oacute;n donde relacionarse, hacer nuevas 
+										amistades y pasarlo bien con distintas actividades.
+									</p>
 								</div>
-								<p>
-									Nuestro prop&oacute;sito es, por tanto, juntar al mayor n&uacute;mero de personas que compartan 
-									estas aficiones, en Granada, y poder organizar actividades todos juntos. Los salones del manga 
-									y de videojuegos son muy divertidos, pero, por desgracia, no puede haber uno todas las semanas. 
-									Nuestra intenci&oacute;n es hacer que la espera sea mas llevadera y poder conocer gente nueva.
-								</p>
-								<br/>
-								<p>
-									Por encima de todo, somos una asociaci&oacute;n que escucha a sus miembros. Tenemos muchas 
-									actividades, pero cualquier miembro puede sugerir y organizar actividades. Nadie esta por encima 
-									de nadie, tampoco. Todos los miembros son iguales y son tratados como tal. Puede verse como que 
-									somos un grupo de amigos y, como tal, no hay ninguna imposici&oacute;n, ninguna obligaci&oacute;n, 
-									solo la de pasarlo bien y divertirse.
-								</p>
-								<br/>
-								<p>
-									En definitiva, somos un grupo (o asociaci&oacute;n) que no busca lucrarse, que no cobra a sus 
-									miembros y que solo quiere unir al mayor numero de freaks de Granada para organizar actividades, 
-									divertirse y pasarlo bien. Un lugar de reuni&oacute;n  para todos los que quieran compartir sus 
-									aficiones con nosotros.
-								</p>
+								<div class="col-md-12">
+									<div class="col-md-6">
+										<img class="thumbnail img-responsive" alt="IMG 01" src="images/index/img-01.jpg"/>
+									</div>
+									<div class="col-md-6">
+										<p>
+											La cultura Freak, para nosotros/as, engloba muchas aficiones. Podr&iacute;amos decir que, 
+											si te sientes representado/a en los salones del manga y videojuegos, entonces en 
+											<strong>Granada Freak</strong> te sentir&aacute;s como en casa. Ya sea que disfrutes con la 
+											ciencia ficci&oacute;n, la cultura asi&aacute;tica o las aficiones antes mencionadas, 
+											siempre tendr&aacute;s un lugar aqu&iacute;. Nos gusta pensar que nuestros/as miembros son 
+											diferentes, disfrutan con aficiones que no son convencionales y eso nos hace m&aacute;s 
+											divertidos/as.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<p>
+										<strong>Granada Freak</strong> no es solo un lugar de reuni&oacute;n, tambi&eacute;n es un 
+										lugar donde divertirte. Organizamos actividades de todo tipo con la idea de pasar un rato 
+										agradable y poder desarrollar nuestras aficiones. Las <a href="galeria.html">actividades</a> no 
+										est&aacute;n limitadas y cualquier miembro puede sugerir nuevas, opinar y aportar ideas. 
+										Todos/as nuestros/as miembros importan y queremos que tengan la libertad que merecen.
+									</p>
+								</div>
+								<div class="col-md-12">
+									<p>
+										En <strong>Granada Freak</strong> no creemos que nadie deba estar por encima de nadie. Es 
+										cierto que tenemos moderadores/a y administradores/a para ayudar a mantener la 
+										asociaci&oacute;n libre de problemas y gente t&oacute;xica, para resolver dudas y ayudar a los 
+										nuevos/as miembros; y para organizar actividades. Aun as&iacute;, nadie esta por encima de 
+										nadie, todos/as tenemos los mismos derechos, acatamos las mismas normas y podemos hacer las 
+										mismas cosas. Si un/a miembro tiene ideas nuevas, es libre de proponerlas y si el resto de 
+										miembros est&aacute; de acuerdo, se llevar&aacute;n a cabo. Todas las decisiones se toman por 
+										votaci&oacute;n donde todos los votos cuentan igual. Queremos ser un lugar donde todos/as 
+										seamos iguales.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<!-- Informacion -->
-					<div class="col-lg-4">
-						<header>
-							<ul class="nav nav-tabs">
-								<li class="active">
-									<a data-toggle="tab" href="#alerts">Alertas</a>
-								</li>
-								<li class="">
-									<a data-toggle="tab" href="#events">Eventos</a>
-								</li>
-								<li class="">
-									<a data-toggle="tab" href="#members">Miembros</a>
-								</li>
-							</ul>
-						</header>
-						<div class="body tab-content">
-							<div class="tab-pane clearfix active" id="alerts">
-								<br/>
-								<h5 class="tab-header"><i class="fa fa-rocket fa-2x"></i> &Uacute;ltimas Alertas</h5>
-								<br/>
-								<ul class="news-list">
-									<li>
-										<i class="fa fa-star fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">T&iacute;tulo de la Alerta</a></div>
-											<div class="comment">
-												Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-												aut odit aut fugit,sed quia
-											</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-star fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">T&iacute;tulo de la Alerta</a></div>
-											<div class="comment">
-												Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-												aut odit aut fugit,sed quia
-											</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-star fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">T&iacute;tulo de la Alerta</a></div>
-											<div class="comment">
-												Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-												aut odit aut fugit,sed quia
-											</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-star fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">T&iacute;tulo de la Alerta</a></div>
-											<div class="comment">
-												Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-												aut odit aut fugit,sed quia
-											</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-star fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">T&iacute;tulo de la Alerta</a></div>
-											<div class="comment">
-												Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-												aut odit aut fugit,sed quia
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-pane" id="events">
-								<br/>
-								<h5 class="tab-header"><i class="fa fa-calendar-o fa-2x"></i> &Uacute;ltimos Eventos</h5>
-								<br/>
-								<ul class="news-list">
-									<li>
-										<i class="fa fa-calendar-check-o fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">Nombre del Evento</a></div>
-											<div class="position">Descripci&oacute;n</div>
-											<div class="time">13 de Septiembre de 2021, 14:00</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-calendar-check-o fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">Nombre del Evento</a></div>
-											<div class="position">Descripci&oacute;n</div>
-											<div class="time">13 de Septiembre de 2021, 14:00</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-calendar-check-o fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">Nombre del Evento</a></div>
-											<div class="position">Descripci&oacute;n</div>
-											<div class="time">13 de Septiembre de 2021, 14:00</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-calendar-check-o fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">Nombre del Evento</a></div>
-											<div class="position">Descripci&oacute;n</div>
-											<div class="time">13 de Septiembre de 2021, 14:00</div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-calendar-check-o fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<div class="name"><a href="#">Nombre del Evento</a></div>
-											<div class="position">Descripci&oacute;n</div>
-											<div class="time">13 de Septiembre de 2021, 14:00</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-pane" id="members">
-								<br/>
-								<h5 class="tab-header"><i class="fa fa-user-circle-o fa-2x"></i> &Uacute;ltimos Miembros</h5>
-								<br/>
-								<ul class="news-list news-list-no-hover">
-									<li>
-										<i class="fa fa-user fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<br/>
-											<div class="name"><a href="#">Nombre del Miembro</a></div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-user fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<br/>
-											<div class="name"><a href="#">Nombre del Miembro</a></div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-user fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<br/>
-											<div class="name"><a href="#">Nombre del Miembro</a></div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-user fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<br/>
-											<div class="name"><a href="#">Nombre del Miembro</a></div>
-										</div>
-									</li>
-									<li>
-										<i class="fa fa-user fa-4x pull-left"></i>
-										<div class="news-item-info">
-											<br/>
-											<div class="name"><a href="#">Nombre del Miembro</a></div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					<div w3-include-HTML="assets/index/info.html"></div>
 
 					<!-- Por que Unirte a Granada Freak -->
 					<div class="col-lg-6">
@@ -336,24 +140,42 @@
 								<h3 class="panel-title"><i class="fa fa-question-circle"></i> ¿Por Qu&eacute; Unirte a Granada Freak?</h3>
 							</div>
 							<div class="panel-body text-justify">
-								<p>
-									Las razones pueden ser las que cada uno quiera. Puede que est&eacute;s buscando conocer gente con 
-									la que hablar de tu anime favorito, jugar a los videojuegos que te apasionan o entrar en el 
-									maravilloso mundo de los juegos de rol. O simplemente, en tu entorno, no encuentres a nadie con 
-									quien compartir estas aficiones. Lo que si podemos asegurar es que aqu&iacute;, sea lo que sea lo 
-									que busques, seguro que lo encontrar&aacute;s. 
-								</p>
-								<br/>
-								<p>
-									Aqu&iacute; solo admitimos buenas personas, con ganas de divertirse sin da&ntilde;ar a nadie. Un 
-									grupo para nada t&oacute;xico que te har&aacute; sentir que eres parte de &eacute;l desde el mismo 
-									momento que te unas.
-								</p>
-								<br/>
-								<p>
-									Siempre es una gran idea tener gente que te entienda, con la que compartir tus aficiones y acudir 
-									a los eventos que te gustan. Los salones del manga son mas divertidos cuando vas con un gran grupo.
-								</p>
+								<div class="col-md-12">
+									<p>
+										Cada persona es un mundo. Las razones por las que puedas querer unirte a <strong>Granada 
+										Freak</strong> pueden ser muchas. En realidad, poco importan las razones. Lo importante es 
+										tener ganas de pasarlo bien. 
+									</p>
+								</div>
+								<div class="col-md-12">
+									<p>
+										Puede que est&eacute;s buscando conocer gente con la que hablar de tu anime favorito, jugar a 
+										los videojuegos que te apasionan o entrar en el maravilloso mundo de los juegos de rol. O 
+										simplemente, en tu entorno, no encuentres a nadie con quien compartir estas aficiones. No 
+										podemos saber por qu&eacute; decidir&aacute;s unirte. Lo que si podemos asegurar es que 
+										aqu&iacute;, sea lo que sea lo que busques, seguro que lo encontrar&aacute;s aqu&iacute;. 
+									</p>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-6">
+										<img class="thumbnail img-responsive" alt="IMG 02" src="images/index/img-02.jpg"/>
+									</div>
+									<div class="col-md-6">
+										<p>
+											Algo a tener en cuenta es que solo admitimos buenas personas, con ganas de divertirse. 
+											Gente t&oacute;xica, intolerante o con malas intenciones no son bien recibidas aqu&iacute;. 
+											En <strong>Granada Freak</strong> encontrar&aacute;s un grupo amistoso que te har&aacute; 
+											sentir parte de &eacute;l desde el mismo momento en que te unas.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<p>
+										Siempre es una gran idea tener gente que te entienda, con la que compartir tus aficiones y 
+										acudir a los eventos que te gustan. Los salones del manga son m&aacute;s divertidos cuando vas 
+										con un gran grupo. 
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -365,25 +187,43 @@
 								<h3 class="panel-title"><i class="fa fa-question-circle"></i> ¿Por Qu&eacute; es sin &Aacute;nimo de Lucro?</h3>
 							</div>
 							<div class="panel-body text-justify">
-								<p>
-									<strong>Granada Freak</strong> es, y tenemos la intenci&oacute;n de que as&iacute; se mantenga, 
-									gratis. No cobramos cuotas a nuestros miembros ya que hacemos esto porque nos gusta. Tampoco 
-									tenemos una infraestructura que requiera de pagos. Opinamos que nuestros miembros no tienen que 
-									estar atados por una cuota mensual, y son libres tanto de unirse como de marcharse en cualquier 
-									momento, sin problemas ni excusas.
-								</p>
-								<br/>
-								<p>
-									Las actividades que organizamos no tienen coste por la organizaci&oacute;n. El &uacute;nico coste 
-									que pueden llegar a tener es porque sea necesario (desplazamientos, consumiciones, etc.). Aun 
-									as&iacute;, nuestra intenci&oacute;n es la de organizar todas las actividades posibles a coste 0 
-									o con un coste lo mas bajo posible para que nuestros miembros puedan acudir siempre.
-								</p>
-								<br/>
-								<p>
-									Valoramos la diversi&oacute;n por encima de todo. Por eso, todo lo hacemos con la intenci&oacute;n 
-									de brindar a nuestros miembros la mejor experiencia posible y la mejor de las diversiones.
-								</p>
+								<div class="col-md-12">
+									<p>
+										En <strong>Granada Freak</strong> no cobramos cuotas a nuestros/as miembros y nuestra 
+										intenci&oacute;n es que siga siendo as&iacute;. No tenemos infraestructuras que requieran de 
+										pagos y las labores que realizamos son porque nos gusta lo que hacemos, no con el objetivo de 
+										lucrarnos de ninguna manera.
+									</p>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-6">
+										<p>
+											En nuestra opini&oacute;n, ninguno/a de nuestros/as miembros deber&iacute;a sentirse 
+											atado/a por una cuota mensual. Sois libres, tanto para uniros como para marcharos en 
+											cualquier momento y sin excusas o problemas. Queremos que <strong>Granada Freak</strong> 
+											sea un lugar de encuentro flexible.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<img class="thumbnail img-responsive" alt="IMG 03" src="images/index/img-03.png"/>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<p>
+										Las actividades que organizamos no tienen coste de organizaci&oacute;n.  El &uacute;nico coste 
+										que pueden llegar a tener es el necesario para desarrollar la actividad como desplazamientos o 
+										consumiciones. Aun as&iacute;, nuestra intenci&oacute;n es la de organizar todas las 
+										actividades posibles a coste 0 o con un precio lo mas bajo posible para que nuestros/as miembros 
+										puedan acudir al mayor número de ellas posible.
+									</p>
+								</div>
+								<div class="col-md-12">
+									<p>
+										Lo mas importante en Granada Freak, por encima de todo, es que nuestros/as miembros se diviertan 
+										y se sientan a gusto. Por eso, todo lo hacemos con la intenci&oacute;n de brindar a nuestros/as 
+										miembros la mejor experiencia posible, y la mejor de las diversiones. 
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -392,13 +232,14 @@
 			</div>
 
 			<!-- Footer -->
-			<div class="col-lg-12 fixed-bottom text-center">                    
-				<p class="text-info">
-					<strong>Copyright &copy; Granada Freak 2021
-				</p>
-			</div>
+			<div w3-include-HTML="assets/footer.html"></div>
 			
 		</div>
+
+		<!-- Scripts -->
+		<script>
+			w3.includeHTML(() => w3.addClass('#nav-index', 'selected'));
+		</script>
 
 	</body>
 
