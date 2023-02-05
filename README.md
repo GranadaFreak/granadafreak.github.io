@@ -1,6 +1,6 @@
 # Granada Freak
 
-Web de la Asociacion Granada Freak (HTML5 + CSS3 + JS)
+Web de la Agrupacion Granada Freak (HTML5 + CSS3 + JS)
 
 ## URL
 
